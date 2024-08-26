@@ -3,7 +3,7 @@ name: Execute SSH Commands
 on:
   workflow_dispatch: # 手动触发工作流
   schedule:
-    - cron: "0 16 */2 * *"  # 从每月1号开始，每隔1天下午4点执行一次（即1、3、5、7、9……）
+    - cron: "0 16 */3 * *"  # 每隔3天下午4点执行一次（即1、4、7、10、13……）
 
 jobs:
   execute-commands:
